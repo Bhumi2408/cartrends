@@ -1,0 +1,521 @@
+body {
+  background: gray;
+  overflow-x: hidden;
+}
+.rolls-royce, .audii, .mercedess,.tharr , .bmww , .lambo {
+  position: relative;
+}
+.rolls-royce > img,.mercedess > img, .bmww > img{
+  margin-top: 20px;
+  width: 80%;
+  height: 550px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.rolls-royce > .rolls-content,.mercedess > .mercedes-content , .bmww > .bmw-content{
+  position: absolute;
+  color: white;
+  top: 120px;
+  right: 0;
+  width: 40%;
+  margin-right: 70px;
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5));
+  border-radius: 10px;
+  padding: 10px;
+}
+.rolls-royce > .rolls-content > h2,.audii > .audi-content > h2,.mercedess > .mercedes-content > h2,.tharr > .thar-content > h2,.bmww > .bmw-content > h2,.lambo > .lambo-content > h2 {
+  font-size: 40px;
+}
+.rolls-royce > .rolls-content > p,.audii > .audi-content > p,.mercedess > .mercedes-content > p,.tharr > .thar-content > p,.bmww > .bmw-content > p,.lambo > .lambo-content > p {
+  font-size: 18px;
+  text-shadow: 0px 0px 10px black;
+}
+.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img,.mercedess  > .mercedes-content> .mercedes-img,.tharr > .thar-content > .thar-img,.bmww > .bmw-content > .bmw-img,.lambo > .lambo-content > .lambo-img  {
+  display: flex;
+  width: 32%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  color: black;
+  height: 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.rolls-royce > .rolls-gallery, .audii > .audi-gallery, .mercedess > .mercedes-gallery, .tharr > .thar-gallery,  .bmww > .bmw-gallery,  .lambo > .lambo-gallery {
+  width: 90%;
+  background: white;
+  position: absolute;
+  top: -20px;
+  left: 4%;
+  z-index: 15;
+  padding: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria,.mercedess > .mercedes-gallery > .galleria,.tharr > .thar-gallery > .galleria,.bmww > .bmw-gallery > .galleria,.lambo > .lambo-gallery > .galleria {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+.rolls-royce > .rolls-gallery > .galleria > div > .gallery,.audii > .audi-gallery > .galleria > div > .gallery,.mercedess > .mercedes-gallery > .galleria > div > .gallery,.tharr > .thar-gallery > .galleria > div > .gallery,.bmww > .bmw-gallery > .galleria > div > .gallery,.lambo > .lambo-gallery > .galleria > div > .gallery {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 15px;
+   transition:all 0.3s;
+}
+.rolls-royce > .rolls-gallery > .galleria > div > .gallery:hover,.audii > .audi-gallery > .galleria > div > .gallery:hover,.mercedess > .mercedes-gallery > .galleria > div > .gallery:hover,.tharr > .thar-gallery > .galleria > div > .gallery:hover,.bmww > .bmw-gallery > .galleria > div > .gallery:hover,.lambo > .lambo-gallery > .galleria > div > .gallery:hover {
+  transform: scale(1.3);
+}
+.rolls-gallery > #close,.audi-gallery > #audi-close,.mercedes-gallery > #mercedes-close,.thar-gallery > #thar-close,.bmw-gallery > #bmw-close,.lambo-gallery > #lambo-close {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  margin: 10px auto;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.rolls-gallery > #cross,.audi-gallery > #audi-cross,.mercedes-gallery > #mercedes-cross,.thar-gallery > #thar-cross,.bmw-gallery > #bmw-cross ,.lambo-gallery > #lambo-cross {
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+  font-size: 40px;
+  font-weight: 900;
+  transform: rotate(224deg);
+  cursor: pointer;
+}
+.audii > img,.tharr > img , .lambo > img  {
+  margin-top: 20px;
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 240px;
+}
+.audii > .audi-content,.tharr > .thar-content ,.lambo > .lambo-content {
+  position: absolute;
+  color: white;
+  top: 120px;
+  left: 0;
+  width: 40%;
+  margin-left: 70px;
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5));
+  border-radius: 10px;
+  padding: 10px;
+}
+@media(max-width:500px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 200px;
+		margin-left: 35px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 200px;
+		margin-left: 35px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		position: relative;
+		color: white;
+		top: 0px;
+		width: 80%;
+		margin-left: 35px;
+	}
+	.rolls-royce > .rolls-content > h2, .audii > .audi-content > h2, .mercedess > .mercedes-content > h2, .tharr > .thar-content > h2, .bmww > .bmw-content > h2, .lambo > .lambo-content > h2 {
+		font-size: 30px;
+	}
+	.rolls-royce > .rolls-content > p, .audii > .audi-content > p, .mercedess > .mercedes-content > p, .tharr > .thar-content > p, .bmww > .bmw-content > p, .lambo > .lambo-content > p {
+		font-size: 14px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 55%;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+    position: relative;
+    color: white;
+    top: 0px;
+    width: 80%;
+    margin-left: 35px;
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5));
+    border-radius: 10px;
+    padding: 10px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 215px;
+	}
+	.rolls-gallery > #cross, .audi-gallery > #audi-cross, .mercedes-gallery > #mercedes-cross, .thar-gallery > #thar-cross, .bmw-gallery > #bmw-cross, .lambo-gallery > #lambo-cross {
+		margin-right: 10px;
+	}
+}
+@media(min-width:341px) and (max-width:360px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 230px;
+	}
+}
+@media(min-width:361px) and (max-width:390px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 245px;
+	}
+}
+@media(min-width:391px) and (max-width:415px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 200px;
+		margin-left: 40px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 200px;
+		margin-left: 40px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		margin-left: 40px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		margin-left: 40px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 270px;
+	}
+}
+@media(min-width:416px) and (max-width:470px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		margin-left: 45px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 200px;
+		margin-left: 45px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		margin-left: 45px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		margin-left: 45px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 290px;
+	}
+}
+@media(min-width:471px) and (max-width:500px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		margin-left: 50px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 200px;
+		margin-left: 50px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		margin-left: 50px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		margin-left: 50px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 330px;
+	}
+}
+@media(min-width:500px) and (max-width:550px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 250px;
+		margin-left: 50px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 250px;
+		margin-left: 50px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		position: relative;
+		color: white;
+		top: 0px;
+		width: 80%;
+		margin-left: 50px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		position: relative;
+		color: white;
+		top: 0px;
+		width: 80%;
+		margin-left: 50px;
+		background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5));
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.rolls-royce > .rolls-content > h2, .audii > .audi-content > h2, .mercedess > .mercedes-content > h2, .tharr > .thar-content > h2, .bmww > .bmw-content > h2, .lambo > .lambo-content > h2 {
+		font-size: 30px;
+	}
+	.rolls-royce > .rolls-content > p, .audii > .audi-content > p, .mercedess > .mercedes-content > p, .tharr > .thar-content > p, .bmww > .bmw-content > p, .lambo > .lambo-content > p {
+		font-size: 16px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 55%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 340px;
+	}
+	.rolls-gallery > #cross, .audi-gallery > #audi-cross, .mercedes-gallery > #mercedes-cross, .thar-gallery > #thar-cross, .bmw-gallery > #bmw-cross, .lambo-gallery > #lambo-cross {
+		margin-right: 10px;
+	}
+}
+@media(min-width:540px) and (max-width:550px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 370px;
+	}
+}
+@media(min-width:551px) and (max-width:600px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 300px;
+		margin-left: 55px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 300px;
+		margin-left: 55px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		position: relative;
+		color: white;
+		top: 0px;
+		width: 80%;
+		margin-left: 55px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		position: relative;
+		color: white;
+		top: 0px;
+		width: 80%;
+		margin-left: 55px;
+		background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5));
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.rolls-royce > .rolls-content > h2, .audii > .audi-content > h2, .mercedess > .mercedes-content > h2, .tharr > .thar-content > h2, .bmww > .bmw-content > h2, .lambo > .lambo-content > h2 {
+		font-size: 35px;
+	}
+	.rolls-royce > .rolls-content > p, .audii > .audi-content > p, .mercedess > .mercedes-content > p, .tharr > .thar-content > p, .bmww > .bmw-content > p, .lambo > .lambo-content > p {
+		font-size: 17px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 55%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 390px;
+	}
+	.rolls-gallery > #cross, .audi-gallery > #audi-cross, .mercedes-gallery > #mercedes-cross, .thar-gallery > #thar-cross, .bmw-gallery > #bmw-cross, .lambo-gallery > #lambo-cross {
+		margin-right: 10px;
+	}
+}
+@media(min-width:600px) and (max-width:700px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		margin-top: 20px;
+		height: 360px;
+		margin-left: 20px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		margin-top: 20px;
+		height: 360px;
+		margin-left: 95px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		top: 60px;
+		width: 60%;
+		margin-right: 15px;
+	}
+	.rolls-royce > .rolls-content > h2, .audii > .audi-content > h2, .mercedess > .mercedes-content > h2, .tharr > .thar-content > h2, .bmww > .bmw-content > h2, .lambo > .lambo-content > h2 {
+		font-size: 30px;
+	}
+	.rolls-royce > .rolls-content > p, .audii > .audi-content > p, .mercedess > .mercedes-content > p, .tharr > .thar-content > p, .bmww > .bmw-content > p, .lambo > .lambo-content > p {
+		font-size: 15px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 50%;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		top: 60px;
+		width: 60%;
+		margin-left: 20px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+      width: 215px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 8%;
+	}
+}
+@media (min-width: 600px) and (max-width: 650px){
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 12%;
+	}
+}
+@media (min-width: 651px) and (max-width: 700px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 230px;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 12%;
+	}
+}
+@media (min-width: 701px) and (max-width: 800px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 400px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 400px;
+		margin-left: 120px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		top: 45px;
+		width: 66%;
+		margin-right: 20px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		top: 80px;
+		width: 66%;
+		margin-left: 20px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 45%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		margin-left: 12%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 254px;
+	}
+}
+@media (min-width: 761px) and (max-width: 800px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 274px;
+	}
+}
+@media (min-width: 801px) and (max-width: 835px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 274px;
+	}
+}
+@media (min-width: 801px) and (max-width: 900px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 400px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 400px;
+		margin-left: 120px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		top: 70px;
+		width: 60%;
+		margin-right: 20px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		top: 80px;
+		width: 60%;
+		margin-left: 20px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 45%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		margin-left: 12%;
+	}
+}
+@media (min-width: 901px) and (max-width: 1000px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 400px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 400px;
+		margin-left: 170px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		top: 65px;
+		width: 55%;
+		margin-right: 20px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		top: 80px;
+		width: 50%;
+		margin-left: 20px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 45%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		margin-left: 15%;
+	}
+}
+@media (min-width: 1001px) and (max-width: 1100px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 400px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 400px;
+		margin-left: 190px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		top: 65px;
+		width: 50%;
+		margin-right: 20px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		top: 80px;
+		width: 45%;
+		margin-left: 20px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 45%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		margin-left: 12%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 240px;
+	}	
+}
+@media (min-width: 1101px) and (max-width: 1300px){
+	.rolls-royce > img, .mercedess > img, .bmww > img {
+		height: 450px;
+	}
+	.audii > img, .tharr > img, .lambo > img {
+		height: 450px;
+		margin-left: 190px;
+	}
+	.rolls-royce > .rolls-content, .mercedess > .mercedes-content, .bmww > .bmw-content {
+		top: 70px;
+		margin-right: 20px;
+	}
+	.audii > .audi-content, .tharr > .thar-content, .lambo > .lambo-content {
+		top: 70px;
+		margin-left: 20px;
+	}
+	.rolls-royce > .rolls-content > .rolls-img, .audii > .audi-content > .audi-img, .mercedess > .mercedes-content> .mercedes-img, .tharr > .thar-content > .thar-img, .bmww > .bmw-content > .bmw-img, .lambo > .lambo-content > .lambo-img {
+		width: 45%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria, .audii > .audi-gallery > .galleria, .mercedess > .mercedes-gallery > .galleria, .tharr > .thar-gallery > .galleria, .bmww > .bmw-gallery > .galleria, .lambo > .lambo-gallery > .galleria {
+		margin-left: 12%;
+	}
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 264px;
+	}	
+}
+@media (min-width: 1190px) and (max-width: 1210px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 270px;
+	}
+}
+@media (min-width: 1211px) and (max-width: 1300px){
+	.rolls-royce > .rolls-gallery > .galleria > div > .gallery, .audii > .audi-gallery > .galleria > div > .gallery, .mercedess > .mercedes-gallery > .galleria > div > .gallery, .tharr > .thar-gallery > .galleria > div > .gallery, .bmww > .bmw-gallery > .galleria > div > .gallery, .lambo > .lambo-gallery > .galleria > div > .gallery {
+		width: 290px;
+	}
+}

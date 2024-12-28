@@ -1,0 +1,494 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:gray;
+}
+.heading{
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+	margin-top:30px;
+	position:relative;
+}
+.heading > h2{
+	font-family:arial;
+	font-size:50px;
+	color:white;
+}
+.heading > h2::before{
+	content:'';
+	position:absolute;
+	width:20%;
+	height:5px;
+	background:black;
+	top:60px;
+	left:40%;
+	right:0;
+}
+.personal-info{
+	color:white;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.personal-info > .hh{
+	margin-left:130px;
+}
+.personal-info > .hh{
+	font-size:20px;
+}
+.personal-info > .drive-form > form{
+	padding:0px 115px;
+}
+.personal-info > .drive-form > form > .detail{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:50px;
+	padding:20px 0px 10px;
+}
+.personal-info > .drive-form > form > .detail > .mail{
+	margin-right:50px;
+}
+.personal-info > .drive-form > form > .addr{
+	display:flex;
+	flex-wrap:wrap;
+	gap:15px;
+	padding:10px 0px 10px;
+}
+.personal-info > .drive-form > form > .fuel1{
+	display:flex;
+	flex-wrap:wrap;
+	gap:15px;
+	padding:10px 0px 20px;
+}
+.personal-info > .drive-form > form > div > input{
+	background:transparent;
+	border:none;
+	color:#dddddd;
+	padding:8px 150px 8px 20px;
+	border-bottom:1px solid white;
+}
+.personal-info > .drive-form > form > div > input:focus{
+	outline:none;
+}
+::placeholder{
+	color:#dddddd;
+}
+.personal-info > .drive-form > form > .addr > select{
+	background:transparent;
+	border:none;
+	color:#dddddd;
+	padding:8px 220px 8px 20px;
+	margin-right:40px;
+	border-bottom:1px solid white;
+}
+.personal-info > .drive-form > form > div > select:focus{
+	outline:none;
+}
+.personal-info > .drive-form > form > div > select > option{
+	background:black;
+	padding:20px 0px;
+	font-size:17px;
+	font-weight:600;
+	border-bottom:2px solid white;
+}
+.personal-info > .drive-form > form > .addr > .state{
+	padding:8px 130px 8px 20px;
+}
+.personal-info > .drive-form > form > .fuel1 > select{
+	background:transparent;
+	border:none;
+	color:#dddddd;
+	padding:8px 200px 8px 20px;
+	margin-right:40px;
+	border-bottom:1px solid white;
+}
+.personal-info > .drive-form > form > div > label{
+	font-weight:600;
+}
+.personal-info > .drive-form > form > div > input[type=submit]{
+	font-size:17px;
+	font-weight:600;
+	background:black;
+	border:none;
+	padding:10px 50px 10px 50px;
+	margin-top:20px;
+	border-radius:10px;
+}
+@media(min-width:0px) and (max-width:375px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 75px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr {
+		gap: 15px;
+		padding: 10px 19px 10px;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 127px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .fuel1 {
+		padding: 10px 20px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 160px 8px 20px;
+	}
+	.personal-info > .drive-form > form {
+		padding: 23px;
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.heading > h2 {
+		font-size: 35px;
+	}
+	.heading > h2::before {
+		content: '';
+		position: absolute;
+		width: 28%;
+		height: 5px;
+		top: 130px;
+		left: 40%;
+		right: 0;
+	}
+}
+@media(min-width:376px) and (max-width:550px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form {
+		padding:10px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.heading > h2 {
+		font-size: 40px;
+	}
+	.heading > h2::before {
+		content: '';
+		position: absolute;
+		width: 28%;
+		height: 5px;
+		top: 100px;
+		left: 40%;
+		right: 0;
+	}
+}
+@media(min-width:376px) and (max-width:400px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form {
+    padding:30px;
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+}
+@media(min-width:401px) and (max-width:450px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form {
+		padding:40px;
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+}
+@media(min-width:451px) and (max-width:500px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form {
+		padding:65px;
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+}
+@media(min-width:501px) and (max-width:550px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form {
+		padding:90px;
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+}
+@media(min-width:551px) and (max-width:605px){
+	.personal-info > .hh {
+		margin-left: 35px;
+	}
+	.personal-info > .drive-form > form {
+       padding: 10px 110px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;	
+	}
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.heading > h2 {
+		font-size: 42px;
+	}
+	.heading > h2::before {
+		content: '';
+		position: absolute;
+		width: 25%;
+		height: 5px;
+		top: 110px;
+		left: 40%;
+		right: 0;
+	}
+}
+@media(min-width:606px) and (max-width:700px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 0px 0px 8px 0px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 0px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 50px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 30px 8px 20px;
+		margin-right: 0px;
+	}
+	.heading > h2 {
+		font-size: 45px;
+	}
+	.heading > h2::before {
+		content: '';
+		position: absolute;
+		width: 25%;
+		height: 5px;
+		top: 110px;
+		left: 40%;
+		right: 0;
+	}
+}
+@media(min-width:701px) and (max-width:759px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 50px 8px 13px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+	.heading > h2 {
+		font-size: 45px;
+	}
+	.heading > h2::before {
+		content: '';
+		position: absolute;
+		width: 25%;
+		height: 5px;
+		top: 110px;
+		left: 40%;
+		right: 0;
+	}
+}
+@media(min-width:760px) and (max-width:850px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 50px 8px 13px;
+
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+	.heading > h2 {
+		font-size: 45px;
+	}
+	.heading > h2::before {
+		content: '';
+		position: absolute;
+		width: 25%;
+		height: 5px;
+		top: 65px;
+		left: 40%;
+		right: 0;
+	}
+}
+@media(min-width:851px) and (max-width:900px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 100px 8px 13px;
+
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+}
+@media(min-width:901px) and (max-width:1000px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 30px 8px 13px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+}
+@media(min-width:1001px) and (max-width:1100px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 60px 8px 13px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+}
+@media(min-width:1101px) and (max-width:1200px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 100px 8px 13px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+}
+@media(min-width:1201px) and (max-width:1300px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 140px 8px 13px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:0px;
+	}
+	.personal-info > .drive-form > form > .addr > .state {
+		padding: 8px 60px 8px 20px;
+	}
+	.personal-info > .drive-form > form > .addr > select {
+		padding: 8px 105px 8px 20px;
+		margin-right:0;
+	}
+	.personal-info > .drive-form > form > .fuel1 > select {
+		padding: 8px 90px 8px 20px;
+		margin-right: 0px;
+	}
+}
+@media(min-width:1300px) and (max-width:1400px){
+	.personal-info > .drive-form > form > .detail {
+		gap: 15px;
+	}
+	.personal-info > .drive-form > form > .detail > .mail{
+		margin-right:20px;
+	}
+	.personal-info > .drive-form > form > div > input {
+		padding: 8px 156px 8px 20px;
+	}
+}
